@@ -28,11 +28,16 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.progress = New System.Windows.Forms.Label()
         Me.WebBrowser = New System.Windows.Forms.WebBrowser()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Go_Back
         '
-        Me.Go_Back.Location = New System.Drawing.Point(12, 12)
+        Me.Go_Back.Location = New System.Drawing.Point(12, 26)
         Me.Go_Back.Name = "Go_Back"
         Me.Go_Back.Size = New System.Drawing.Size(30, 30)
         Me.Go_Back.TabIndex = 0
@@ -41,7 +46,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(48, 12)
+        Me.Button1.Location = New System.Drawing.Point(48, 26)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(30, 30)
         Me.Button1.TabIndex = 1
@@ -51,7 +56,7 @@ Partial Class Form1
         'Refresh
         '
         Me.Refresh.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!)
-        Me.Refresh.Location = New System.Drawing.Point(84, 12)
+        Me.Refresh.Location = New System.Drawing.Point(84, 26)
         Me.Refresh.Name = "Refresh"
         Me.Refresh.Size = New System.Drawing.Size(30, 30)
         Me.Refresh.TabIndex = 2
@@ -62,13 +67,14 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(120, 18)
+        Me.TextBox1.Location = New System.Drawing.Point(120, 26)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(952, 20)
         Me.TextBox1.TabIndex = 3
         '
         'progress
         '
+        Me.progress.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.progress.AutoSize = True
         Me.progress.Location = New System.Drawing.Point(4, 544)
         Me.progress.Name = "progress"
@@ -78,12 +84,44 @@ Partial Class Form1
         '
         'WebBrowser
         '
-        Me.WebBrowser.Location = New System.Drawing.Point(7, 48)
+        Me.WebBrowser.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.WebBrowser.Location = New System.Drawing.Point(7, 62)
         Me.WebBrowser.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser.Name = "WebBrowser"
-        Me.WebBrowser.Size = New System.Drawing.Size(1065, 493)
+        Me.WebBrowser.ScriptErrorsSuppressed = True
+        Me.WebBrowser.Size = New System.Drawing.Size(1065, 479)
         Me.WebBrowser.TabIndex = 5
         Me.WebBrowser.Url = New System.Uri("http://www.google.com", System.UriKind.Absolute)
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.AboutToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1084, 24)
+        Me.MenuStrip1.TabIndex = 6
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
+        Me.AboutToolStripMenuItem.Text = "About"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'Form1
         '
@@ -96,9 +134,13 @@ Partial Class Form1
         Me.Controls.Add(Me.Refresh)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Go_Back)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -110,4 +152,8 @@ Partial Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents progress As Label
     Friend WithEvents WebBrowser As WebBrowser
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
 End Class
