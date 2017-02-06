@@ -9,3 +9,4 @@ C:\Users\limpa\Documents\GitHub\web-browser\web browser\web browser\obj\Debug\we
 C:\Users\limpa\Documents\GitHub\web-browser\web browser\web browser\obj\Debug\web browser.exe
 C:\Users\limpa\Documents\GitHub\web-browser\web browser\web browser\obj\Debug\web browser.xml
 C:\Users\limpa\Documents\GitHub\web-browser\web browser\web browser\obj\Debug\web browser.pdb
+C:\Users\limpa\Documents\GitHub\web-browser\web browser\web browser\obj\Debug\web_browser.AboutBox1.resources
