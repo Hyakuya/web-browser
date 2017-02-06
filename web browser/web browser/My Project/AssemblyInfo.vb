@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("web browser")>
-<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyTitle("Oversouls browser")>
+<Assembly: AssemblyDescription("Browser made my Oversoul and EddeTheR, made for education purpose")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("web browser")>
-<Assembly: AssemblyCopyright("Copyright ©  2017")>
+<Assembly: AssemblyProduct("Oversouls Browser")>
+<Assembly: AssemblyCopyright("")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

@@ -16,7 +16,7 @@ Partial Class AboutBox1
 
     Friend WithEvents TableLayoutPanel As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents LogoPictureBox As System.Windows.Forms.PictureBox
-    Friend WithEvents LabelProductName As System.Windows.Forms.Label
+    Friend WithEvents oversoul As System.Windows.Forms.Label
     Friend WithEvents LabelVersion As System.Windows.Forms.Label
     Friend WithEvents LabelCompanyName As System.Windows.Forms.Label
     Friend WithEvents TextBoxDescription As System.Windows.Forms.TextBox
@@ -34,7 +34,7 @@ Partial Class AboutBox1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AboutBox1))
         Me.TableLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
-        Me.LabelProductName = New System.Windows.Forms.Label()
+        Me.oversoul = New System.Windows.Forms.Label()
         Me.LabelVersion = New System.Windows.Forms.Label()
         Me.LabelCopyright = New System.Windows.Forms.Label()
         Me.LabelCompanyName = New System.Windows.Forms.Label()
@@ -50,7 +50,7 @@ Partial Class AboutBox1
         Me.TableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.0!))
         Me.TableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.0!))
         Me.TableLayoutPanel.Controls.Add(Me.LogoPictureBox, 0, 0)
-        Me.TableLayoutPanel.Controls.Add(Me.LabelProductName, 1, 0)
+        Me.TableLayoutPanel.Controls.Add(Me.oversoul, 1, 0)
         Me.TableLayoutPanel.Controls.Add(Me.LabelVersion, 1, 1)
         Me.TableLayoutPanel.Controls.Add(Me.LabelCopyright, 1, 2)
         Me.TableLayoutPanel.Controls.Add(Me.LabelCompanyName, 1, 3)
@@ -81,17 +81,17 @@ Partial Class AboutBox1
         Me.LogoPictureBox.TabIndex = 0
         Me.LogoPictureBox.TabStop = False
         '
-        'LabelProductName
+        'oversoul
         '
-        Me.LabelProductName.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LabelProductName.Location = New System.Drawing.Point(136, 0)
-        Me.LabelProductName.Margin = New System.Windows.Forms.Padding(6, 0, 3, 0)
-        Me.LabelProductName.MaximumSize = New System.Drawing.Size(0, 17)
-        Me.LabelProductName.Name = "LabelProductName"
-        Me.LabelProductName.Size = New System.Drawing.Size(257, 17)
-        Me.LabelProductName.TabIndex = 0
-        Me.LabelProductName.Text = "Oversoul browser"
-        Me.LabelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.oversoul.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.oversoul.Location = New System.Drawing.Point(136, 0)
+        Me.oversoul.Margin = New System.Windows.Forms.Padding(6, 0, 3, 0)
+        Me.oversoul.MaximumSize = New System.Drawing.Size(0, 17)
+        Me.oversoul.Name = "oversoul"
+        Me.oversoul.Size = New System.Drawing.Size(257, 17)
+        Me.oversoul.TabIndex = 0
+        Me.oversoul.Text = "Oversoul browser"
+        Me.oversoul.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'LabelVersion
         '
